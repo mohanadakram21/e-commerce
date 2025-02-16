@@ -1,5 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import amazonpay from '../../image/amazon-pay.png'
+import AmericanExpress from '../../image/American-Express-Color.png'
+import MasterCard from '../../image/mastercard.webp'
+import PayPal from '../../image/paypal.png'
+import googleplay from '../../image/get-google-play.png'
+import applestore from '../../image/get-apple-store.png'
 
 export default function Footer() {
   return (
@@ -24,15 +30,15 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row items-center justify-between border-t pt-4">
         <div className="flex space-x-4 text-gray-500 mb-4 md:mb-0">
           <span className="text-sm text-white font-semibold">Payment Partners</span>
-          <img src="/src/assets/amazon-pay.png " alt="Amazon Pay" className="h-5" />
-          <img src="./src/assets/American-Express-Color.png" alt="American Express" className="h-5" />
-          <img src="./src/assets/mastercard.webp" alt="MasterCard" className="h-5" />
-          <img src="./src/assets/paypal.png" alt="PayPal" className="h-5" />
+          <img src={amazonpay} alt="Amazon Pay" className="h-5" />
+          <img src={AmericanExpress} alt="American Express" className="h-5" />
+          <img src={MasterCard} alt="MasterCard" className="h-5" />
+          <img src={PayPal} alt="PayPal" className="h-5" />
         </div>
 
         <div className="flex space-x-4">
-          <Link to='' className="block"><img src="./src/assets/get-apple-store.png" alt="App Store" className="h-10 rounded-md"/></Link>
-          <Link to='' className="block"><img src="./src/assets/get-google-play.png" alt="Google Play" className="h-10 rounded-md"/></Link>
+          <Link to='' className="block"><img src={googleplay} alt="App Store" className="h-10 rounded-md"/></Link>
+          <Link to='' className="block"><img src={applestore} alt="Google Play" className="h-10 rounded-md"/></Link>
         </div>
       </div>
     </div>

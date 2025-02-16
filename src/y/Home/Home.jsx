@@ -6,6 +6,11 @@ import { useQuery } from 'react-query';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { cardcontext } from '../context/Cardcontext';
 import { wishlistcontext } from '../context/Wishlistcontext';
+import slider1 from '../../image/slider-image-1.jpeg'
+import slider2 from '../../image/slider-image-2.jpeg'
+import blog1 from '../../image/blog-img-1.jpeg'
+import blog2 from '../../image/blog-img-2.jpeg'
+
 export default function Home() {
   
 
@@ -39,17 +44,17 @@ const {data,isLoading} = useQuery({
   <div className="hello bg-red-500 col-span-4">
   <Swiper slidesPerView={1} loop={true} style={{height:'100%'}}>
   <SwiperSlide>
-  <img src="./src/assets/slider-image-1.jpeg" className='w-full h-full block' alt="" srcSet=""/>
+  <img src={slider1} className='w-full h-full block' alt="" srcSet=""/>
   </SwiperSlide>
   <SwiperSlide>
-  <img src="./src/assets/slider-image-3.jpeg" className='w-full h-full block' alt="" srcSet=""/>
+  <img src={slider2} className='w-full h-full block' alt="" srcSet=""/>
   </SwiperSlide>
   </Swiper>
     
     </div>
   <div className="world bg-green-500 col-span-2">
-  <img src="./src/assets/blog-img-1.jpeg" className='h-1/2' alt="" srcSet=""/>
-  <img src="./src/assets/blog-img-2.jpeg" className='h-1/2' alt="" srcSet=""/>
+  <img src={blog1} className='h-1/2' alt="" srcSet=""/>
+  <img src={blog2} className='h-1/2' alt="" srcSet=""/>
 
   </div>
 </div>
